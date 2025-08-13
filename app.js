@@ -23,7 +23,7 @@ class ImageSlider {
     }
     this.showImage();
   }
-  previousImage() {
+  prevImage() {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     } else {
@@ -37,6 +37,6 @@ const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 const imageSlider = new ImageSlider(images, imageElement);
 nextBtn.addEventListener("click", () => imageSlider.nextImage());
-prevBtn.addEventListener("click", () => imageSlider.previousImage());
+prevBtn.addEventListener("click", () => imageSlider.prevImage());
 
 imageSlider.showImage();
